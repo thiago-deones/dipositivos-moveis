@@ -50,9 +50,16 @@
     </div>
 
     <script>
-        function escrever() {
-            document.getElementById("output").textContent = "Hello, Imperative World!";
-        }
+        const botao = document.getElementById("btnEscrever");
+        const saida = document.getElementById("output");
+
+        botao.addEventListener("click", () => {
+            saida.textContent = 'helloword!';
+        });
+
+        botao.addEventListener('click', () => {
+            botao.style.backgroundColor = 'green';
+        })
     </script>
 </body>
 </html>
