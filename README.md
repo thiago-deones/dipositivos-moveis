@@ -15,6 +15,10 @@ Durante o curso, são abordados temas como:
 - Acesso a sensores e recursos do dispositivo
 - Publicação de apps
 
+
+## Projeto Relógio
+<img width='1280' height='1024' alt='projeto rodando' src='imagens/printProjeto.jpeg'>
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Kotlin / Java / Dart / JavaScript
