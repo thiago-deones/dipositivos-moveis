@@ -1,12 +1,17 @@
 import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function BottonMenu() {
+export default function ButtonMenu() {
   const router = useRouter();
 
   return (
     <View style={styles.menu}>
-      <Pressable onPress={() => router.push('/')}>
+      <Pressable
+        onPress={() => router.push('/')}
+        style={({ pressed }) => ({
+          opacity: pressed ? 0.6 : 1,
+        })}
+      >
         <Text style={styles.menuText}>🏠 Início</Text>
       </Pressable>
     </View>
@@ -23,10 +28,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    bottom: 0
+    bottom: 0,
   },
   menuText: {
     fontSize: 16,
-    color: '#007AFF'
-  }
+    color: '#007AFF',
+  },
 });
