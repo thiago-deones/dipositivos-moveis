@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function BottomMenu() {
+export default function BottonMenu() {
   const router = useRouter();
 
   return (
